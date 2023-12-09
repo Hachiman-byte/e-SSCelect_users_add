@@ -75,7 +75,7 @@
 		function submitForm(e) {
 			e.preventDefault();
 
-			// Get values
+	
 			var name = getInputVal('name');
 			var email = getInputVal('email');
 
@@ -83,14 +83,14 @@
 			document.getElementById('contactForm').reset();
 		}
 
-		// Function to get form values
+		
 		function getInputVal(id) {
 			return document.getElementById(id).value;
 		}
 
         var messagesRef1 = firebase.database()
 			.ref(name);
-		// Save message to firebase
+		
 		function saveMessage(name, email) {
 			var newMessageRef = messagesRef.child(name);
         
